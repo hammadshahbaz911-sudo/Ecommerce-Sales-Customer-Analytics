@@ -51,7 +51,7 @@ The dataset contains nine CSV files covering customers, orders, order items, pay
 ## Project Files
 
 - `Ecommerce_Sales_Analysis.sql` — SQL queries and business analysis.
-- `Business_Insights_Report.txt` — Findings and business recommendations.
+- `Business_Insights_Report.md` — Findings and business recommendations.
 - `E-Commerce_Sales_Analytics_Dashboard.pdf` — Complete Power BI dashboard.
 - `Executive_Overview.png` — Dashboard page 1.
 - `Customer_Operations.png` — Dashboard page 2.
