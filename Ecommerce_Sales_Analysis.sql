@@ -8,15 +8,12 @@ SELECT DATABASE();
 
 USE ecommerce_analytics;
 SELECT DATABASE();
-SHOW TABLES;
 
 SELECT COUNT(*) AS total_customers
 FROM olist_customers_dataset;
 
 SELECT COUNT(*)
 FROM olist_customers_dataset;
-
-DROP TABLE olist_customers_dataset;
 
 USE ecommerce_analytics;
 
@@ -31,39 +28,18 @@ SHOW VARIABLES LIKE 'local_infile';
 SET GLOBAL local_infile = 1;
 SHOW VARIABLES LIKE 'local_infile';
 
-LOAD DATA LOCAL INFILE 'D:/E-Commerce Sales & Customer Analytics/olist_customers_dataset.csv'
-INTO TABLE olist_customers_dataset
-FIELDS TERMINATED BY ','
-OPTIONALLY ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS
-(customer_id, customer_unique_id, customer_zip_code_prefix, customer_city, customer_state);
-
 SELECT COUNT(*) AS total_customers
 FROM olist_customers_dataset;
 
 SHOW VARIABLES LIKE 'local_infile';
 
-LOAD DATA LOCAL INFILE 'D:/E-Commerce Sales & Customer Analytics/olist_customers_dataset.csv'
-INTO TABLE olist_customers_dataset
-FIELDS TERMINATED BY ','
-OPTIONALLY ENCLOSED BY '"'
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS
-(customer_id, customer_unique_id, customer_zip_code_prefix, customer_city, customer_state);
 
 SELECT COUNT(*) AS total_customers
 FROM olist_customers_dataset;
 
-DROP TABLE IF EXISTS olist_customers_dataset;
 SELECT COUNT(*) AS total,
        COUNT(DISTINCT customer_id) AS unique_customers
 FROM olist_customers_dataset;
-
-DROP TABLE olist_customers_dataset;
-DROP TABLE olist_orders_dataset;
-
-SHOW TABLES;
 
 SELECT
     COUNT(*) AS total_orders,
