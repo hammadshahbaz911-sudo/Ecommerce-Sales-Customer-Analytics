@@ -88,7 +88,7 @@ The project provides a practical example of data analysis, SQL querying, data vi
 - Microsoft Power BI
 - Power Query
 - DAX
-- Microsoft Excel / CSV Dataset
+- CSV Dataset
 
 ### Dataset
 Olist Brazilian E-Commerce Public Dataset.
